@@ -13,7 +13,7 @@ export default function Meals() {
       setLoadedMeals(meals);
     }
     fetchMeals();
-  });
+  }, []);
   return (
     <ul id="meals">
       {loadedMeals.map((meal) => (
